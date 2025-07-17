@@ -1,0 +1,171 @@
+/*Custom Variable Styles*/
+:root {
+    --Primary-color: #e46217;
+    --Secondary-color: #7a7c85;
+    --Favorite-color: #eb363f;
+    --Second-favorite-color: black;
+    --Third-favorite-color: #f8f9fa;
+    --Nonfavorite-color: #2370bd;
+    --Fourth-favorite-color: #d752f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+} 
+/*Company Title Styles*/
+.company-brand {
+    color: var(--Third-favorite-color);
+}
+
+.brand-highlight {
+    color: var(--Primary-color);
+}
+/*Header Styles*/
+.header-background {
+    background: black;
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    padding: 10px;
+    justify-content: space-between;
+}
+/*Nav Styles*/
+.nav-content, .nav-item {
+    display: inline-block;
+    margin: 0 2px;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: var(--Primary-color);
+}
+/* Slogan Styles*/
+.slogan-background {
+    background: url(assets/images/Black\ Texture\ Background.jpg) no-repeat center center/cover fixed;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.slogan-header > h2 {
+    color: white;
+    padding-top: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-decoration-color: var(--Primary-color);
+}
+
+.slogan-header > p {
+    padding-top: 40px;
+    font-size: 1.5rem;
+}
+
+.slogan-highlight {
+    color: var(--Primary-color)
+}
+/*Quote Styles*/
+.quote {
+    color: var(--Third-favorite-color);
+    font-size: 2.3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-decoration-color: var(--Primary-color);
+}
+
+.quote-author {
+    color: var(--Third-favorite-color);
+    font-size: 1.2rem;
+    text-align: end;
+    margin-right: 250px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quote-highlight {
+    color: var(--Primary-color);
+}
+
+/*About Us Styles*/
+
+.about-background {
+    background: url(/assets/images/blue\ &\ purple\ background.jpg) no-repeat center center/cover fixed;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.about-content {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-header {
+    place-items: center;
+}
+.about-title {
+    color: var(--Second-favorite-color);
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--Second-favorite-color);
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--Fourth-favorite-color);
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid var(--Third-favorite-color)
+}
+
+.about-text {
+    color: var(--Second-favorite-color);
+    font-size: 1.3rem;
+    background-color: var(--Fourth-favorite-color);
+    width: 40%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid var(--Third-favorite-color)
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    .nav-content, .nav-item {
+        float: right;
+        margin: 0 5px;
+    }
+    .slogan-background {
+        height: 70vh;
+    }
+    .slogan-header, h2 {
+        font-size: 2.5rem;
+    }
+
+    .slogan-header, p {
+        font-size: 1.2rem;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+    }
+
+    .quote-author {
+        font-size: 1rem;
+        margin-right: 150px;
+    }
+}
